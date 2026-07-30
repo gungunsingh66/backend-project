@@ -18,3 +18,8 @@ export {asyncHandler};
 //         })
 //     }
 // }
+
+
+/*
+asyncHandler is a higher-order function that wraps asynchronous Express controllers and automatically catches errors, reducing repetitive try-catch blocks and simplifying error handling.
+*/
