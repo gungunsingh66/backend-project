@@ -19,10 +19,8 @@ const uploadOnCloudinary = async (localFilePath) => {
         return response
     }catch(error){
         fs.unlinkSync(localFilePath) //remove the locally save temorary file as the upload operation got failed
+        return null;
     }
 }
 
-cloudinary.v2.upload(localfilepath, 
-    { public_id: "olympic_flag"},
-    function(error, result) {console.log(result);}
-);
+export {uploadOnCloudinary}
